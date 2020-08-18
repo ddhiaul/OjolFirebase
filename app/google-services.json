@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "73400468729",
+    "firebase_url": "https://ojolfirebase-62796.firebaseio.com",
+    "project_id": "ojolfirebase-62796",
+    "storage_bucket": "ojolfirebase-62796.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:73400468729:android:d4a6f3d4ef1d8f985b0e28",
+        "android_client_info": {
+          "package_name": "com.aulia.idn.ojolfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "73400468729-hfpq41f801ni7peu3aie310qqjrfl1fb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6HC00aOb81BJ4SMzDlbFXzqDw3N3a0EI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "73400468729-hfpq41f801ni7peu3aie310qqjrfl1fb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
