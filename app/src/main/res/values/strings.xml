@@ -13,4 +13,26 @@
     <string name="hp">hp</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="register">Register</string>
+    <string name="input_no_hp">Input no hp</string>
+    <string name="submit">Submit</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile">Profile</string>
+    <string name="history">History</string>
+    <string name="name">Name :</string>
+    <string name="aulia">Aulia</string>
+    <string name="aulemail">dhiyaul.aulia2003@gmail.com</string>
+    <string name="emailis">Email :</string>
+    <string name="hpis">"Hp : "</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="babelan_bekasi">Babelan, Bekasi</string>
+    <string name="dari_mana">dari mana?</string>
+    <string name="mau_kemana">mau kemana?</string>
+    <string name="harga">harga</string>
+    <string name="rp_50_000">Rp 50.000</string>
+    <string name="estimasi_waktu">estimasi waktu</string>
+    <string name="_3_menit">3 menit</string>
+    <string name="pesan">pesan</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="tunggu_driver_yang_ambil_ya">Tunggu driver yang ambil ya ..</string>
 </resources>

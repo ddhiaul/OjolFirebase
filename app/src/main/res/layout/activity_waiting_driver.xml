@@ -3,15 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment">
+    android:layout_height="match_parent">
 
-    <com.google.android.gms.maps.MapView
-        android:id="@+id/mapView"
+    <fragment
+        android:id="@+id/map"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
     <androidx.cardview.widget.CardView
-        android:id="@+id/cv1"
+        android:id="@+id/c"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="@dimen/_10dp"
@@ -70,7 +70,7 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_home_bottom"
-        android:layout_above="@id/btn_home_next"
+        android:layout_above="@id/btn_home_home"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <LinearLayout
@@ -126,7 +126,7 @@
                     android:text="@string/estimasi_waktu"/>
             </LinearLayout>
             <TextView
-                android:id="@+id/tv_home_waktu_distance"
+                android:id="@+id/tv_home_name_driver"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_20dp"
@@ -135,7 +135,7 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
     <Button
-        android:id="@+id/btn_home_next"
+        android:id="@+id/btn_home_home"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_60dp"
         android:text="@string/pesan"

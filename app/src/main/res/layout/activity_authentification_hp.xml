@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AuthentificationHpActivity">
+
+    <EditText
+        android:id="@+id/et_auth_no_hp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/_30dp"
+        android:layout_marginRight="@dimen/_30dp"
+        android:hint="@string/input_no_hp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/background"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textSize="@dimen/_18sp"
+        android:textColorHint="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/tv_submit_auth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_auth_no_hp"
+        android:text="@string/submit"
+        android:gravity="center"
+        android:textSize="@dimen/_18sp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

@@ -1,5 +1,6 @@
 package com.aulia.idn.ojolfirebase.model
 
+//todo 2
 class Users {
     var name: String? = null
     var email: String? = null

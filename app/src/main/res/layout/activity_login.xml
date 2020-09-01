@@ -29,7 +29,8 @@
         android:background="@drawable/background"
         android:gravity="center"
         android:hint="@string/email"
-        android:textSize="@dimen/_18sp" />
+        android:textSize="@dimen/_18sp"
+        android:inputType="textEmailAddress"/>
 
     <EditText
         android:id="@+id/et_password_login"
@@ -42,7 +43,8 @@
         android:background="@drawable/background"
         android:gravity="center"
         android:hint="@string/password"
-        android:textSize="@dimen/_18sp" />
+        android:textSize="@dimen/_18sp"
+        android:inputType="textPassword"/>
 
     <Button
         android:id="@+id/btn_login"

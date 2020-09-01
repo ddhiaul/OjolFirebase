@@ -27,7 +27,8 @@ class RegisterActivity : AppCompatActivity() {
                     et_name_reg.text.isNotEmpty() &&
                     et_hp_reg.text.isNotEmpty() &&
                     et_password_reg.text.isNotEmpty() &&
-                    et_confirm_password_reg.text.isNotEmpty()){
+                    et_confirm_password_reg.text.isNotEmpty()
+            ){
                 authUserSignUp(
                     et_email_reg.text.toString(),
                     et_password_reg.text.toString()
@@ -66,10 +67,10 @@ class RegisterActivity : AppCompatActivity() {
         name: String,
         email: String,
         hp: String,
-        user: FirebaseUser
+        users: FirebaseUser
     ): Boolean {
         var user = Users()
-        user.uid = user.uid
+        user.uid = users.uid
         user.name = name
         user.email = email
         user.hp = hp

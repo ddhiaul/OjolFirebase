@@ -34,7 +34,8 @@
         android:layout_marginTop="@dimen/_20dp"
         android:layout_marginRight="@dimen/_30dp"
         android:layout_marginLeft="@dimen/_30dp"
-        android:background="@drawable/background"/>
+        android:background="@drawable/background"
+        android:inputType="text"/>
     <EditText
         android:id="@+id/et_email_reg"
         android:layout_width="match_parent"
@@ -46,7 +47,8 @@
         android:layout_marginTop="@dimen/_10dp"
         android:layout_marginLeft="@dimen/_30dp"
         android:layout_marginRight="@dimen/_30dp"
-        android:background="@drawable/background"/>
+        android:background="@drawable/background"
+        android:inputType="textEmailAddress"/>
     <EditText
         android:id="@+id/et_hp_reg"
         android:layout_width="match_parent"
@@ -58,7 +60,8 @@
         android:layout_marginTop="@dimen/_10dp"
         android:layout_marginRight="@dimen/_30dp"
         android:layout_marginLeft="@dimen/_30dp"
-        android:background="@drawable/background"/>
+        android:background="@drawable/background"
+        android:inputType="phone"/>
     <EditText
         android:id="@+id/et_password_reg"
         android:layout_width="match_parent"
@@ -70,7 +73,8 @@
         android:layout_marginTop="@dimen/_10dp"
         android:layout_marginLeft="@dimen/_30dp"
         android:layout_marginRight="@dimen/_30dp"
-        android:background="@drawable/background"/>
+        android:background="@drawable/background"
+        android:inputType="textPassword"/>
     <EditText
         android:id="@+id/et_confirm_password_reg"
         android:layout_width="match_parent"
@@ -82,7 +86,8 @@
         android:layout_marginTop="@dimen/_10dp"
         android:layout_marginLeft="@dimen/_30dp"
         android:layout_marginRight="@dimen/_30dp"
-        android:background="@drawable/background"/>
+        android:background="@drawable/background"
+        android:inputType="textPassword"/>
     <Button
         android:id="@+id/btn_reg"
         android:layout_width="match_parent"

@@ -31,6 +31,8 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        auth = FirebaseAuth.getInstance()
+
         //todo 11
         btn_signup_with_google.onClick {
             logIn()
@@ -71,7 +73,7 @@ class LoginActivity : AppCompatActivity() {
     //req login gmail
     private fun logIn(){
         val gson = GoogleSignInOptions
-            .Builder(GoogleSignInOptions.DEFAULT_GAMES_SIGN_IN)
+            .Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestIdToken(getString(R.string.default_web_client_id))
             .requestEmail()
             .build()
