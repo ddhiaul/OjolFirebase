@@ -17,6 +17,7 @@ import com.google.android.gms.common.api.ApiException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.database.*
+import com.google.firebase.iid.FirebaseInstanceId
 import kotlinx.android.synthetic.main.activity_login.*
 import org.jetbrains.anko.sdk27.coroutines.onClick
 import org.jetbrains.anko.startActivity
@@ -146,13 +147,17 @@ class LoginActivity : AppCompatActivity() {
     }
 
     //todo 9
-    private fun insertUser(name: String, email: String, hp: String, idUser: String?)
+    private fun insertUser(name: String, email: String, hp: String, uid: String?)
             : Boolean {
+        val token = FirebaseInstanceId.getInstance().token
         val user = Users()
         user.email = email
         user.name = name
         user.hp = hp
-        user.uid = auth?.uid
+        user.uid = uid
+        user.latitude = "0.0"
+        user.longitude = "0.0"
+        user.token = token
 
         val database = FirebaseDatabase.getInstance()
         val key = database.reference.push().key

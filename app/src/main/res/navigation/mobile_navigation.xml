@@ -12,12 +12,6 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_history"
-        android:name="com.aulia.idn.ojolfirebase.ui.dashboard.DashboardFragment"
-        android:label="@string/history"
-        tools:layout="@layout/fragment_dashboard" />
-
-    <fragment
         android:id="@+id/navigation_profile"
         android:name="com.aulia.idn.ojolfirebase.ui.notifications.NotificationsFragment"
         android:label="@string/profile"

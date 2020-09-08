@@ -8,6 +8,7 @@ import com.aulia.idn.ojolfirebase.utils.Constant
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.iid.FirebaseInstanceId
 import kotlinx.android.synthetic.main.activity_register.*
 import org.jetbrains.anko.sdk27.coroutines.onClick
 import org.jetbrains.anko.startActivity
@@ -69,11 +70,17 @@ class RegisterActivity : AppCompatActivity() {
         hp: String,
         users: FirebaseUser
     ): Boolean {
+        val token = FirebaseInstanceId.getInstance().token
+
         var user = Users()
         user.uid = users.uid
         user.name = name
         user.email = email
         user.hp = hp
+        user.active = true
+        user.token = token
+        user.latitude = "0.0"
+        user.longitude = "0.0"
 
         val databate = FirebaseDatabase.getInstance()
         //id yg msk k database

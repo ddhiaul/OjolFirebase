@@ -6,6 +6,10 @@ class Users {
     var email: String? = null
     var hp: String? = null
     var uid: String? = null
+    var latitude: String? = null
+    var longitude : String? = null
+    var token: String? = null
+    var active: Boolean? = null
 
     //buat nnti proses ngmbil data profile user
     init {
